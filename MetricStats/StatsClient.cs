@@ -36,7 +36,10 @@ namespace MetricStats
             var server = getServersResponse.Value.Single(s => string.Equals(serverName, s.ServerName, StringComparison.OrdinalIgnoreCase));
 
             var getDatabasesResponse = await _api.GetSqlDatabasesAsync(server);
-            var databases = getDatabasesResponse.Value.Where(d => !string.Equals("master", d.Name, StringComparison.OrdinalIgnoreCase));
+            var databases = getDatabasesResponse.Value
+                .Where(d => 
+                !string.Equals("master", d.Name, StringComparison.OrdinalIgnoreCase)
+                && !d.Kind.Contains("vcore")); // skip vCore Purchase Model databases
 
             var records = new List<VisualRecordModel>();
             foreach(var database in databases)

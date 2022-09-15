@@ -15,7 +15,10 @@ namespace AzureApi.Models
             public string? Name { get; set; }
             [JsonPropertyName("sku")]
             public SkuModel? Sku { get; set; }
-            
+
+            [JsonPropertyName("kind")]
+            public string Kind { get; set; } = string.Empty;
+
             public class SkuModel
             {
                 [JsonPropertyName("name")]

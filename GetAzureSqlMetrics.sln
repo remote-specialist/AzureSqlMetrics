@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetAzureSqlMetrics", "GetAzureSqlMetrics\GetAzureSqlMetrics.csproj", "{AADC483B-E355-45F2-B43E-1D147F325E09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureApi", "AzureApi\AzureApi.csproj", "{EA5E4A7B-7369-4B47-812D-E1591D0132DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Configurations", "Configurations\Configurations.csproj", "{38457B4F-D12E-45FC-9BB6-F60D0F6B2869}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetricStats", "MetricStats\MetricStats.csproj", "{72695111-C844-4369-95E3-9608AE617DC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowerBiTemplate", "PowerBiTemplate", "{65625E76-1ABE-4A7C-B2B8-B7126A3414FB}"
+	ProjectSection(SolutionItems) = preProject
+		PowerBi\SqlMetrics.pbit = PowerBi\SqlMetrics.pbit
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AADC483B-E355-45F2-B43E-1D147F325E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AADC483B-E355-45F2-B43E-1D147F325E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AADC483B-E355-45F2-B43E-1D147F325E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AADC483B-E355-45F2-B43E-1D147F325E09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA5E4A7B-7369-4B47-812D-E1591D0132DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA5E4A7B-7369-4B47-812D-E1591D0132DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA5E4A7B-7369-4B47-812D-E1591D0132DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA5E4A7B-7369-4B47-812D-E1591D0132DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38457B4F-D12E-45FC-9BB6-F60D0F6B2869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38457B4F-D12E-45FC-9BB6-F60D0F6B2869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38457B4F-D12E-45FC-9BB6-F60D0F6B2869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38457B4F-D12E-45FC-9BB6-F60D0F6B2869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72695111-C844-4369-95E3-9608AE617DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72695111-C844-4369-95E3-9608AE617DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72695111-C844-4369-95E3-9608AE617DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72695111-C844-4369-95E3-9608AE617DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD950846-5AED-4C3A-8B92-4844065E1E79}
+	EndGlobalSection
+EndGlobal
